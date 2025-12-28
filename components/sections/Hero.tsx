@@ -86,8 +86,7 @@ const Hero = () => {
           className="text-gray-200 text-lg sm:text-xl max-w-2xl mb-10 leading-relaxed"
         >
           Nous offrons des réparations de précision, des interventions d'urgence
-          sur le terrain et la fourniture de pièces détachées pour garder votre
-          flotte opérationnelle 24/7.
+          sur le terrain pour garder votre flotte opérationnelle 24/7
         </motion.p>
 
         <motion.div

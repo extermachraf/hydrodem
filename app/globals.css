@@ -121,21 +121,27 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   /* Custom Scrollbar */
   ::-webkit-scrollbar {
     width: 10px;
   }
+
   ::-webkit-scrollbar-track {
     background: transparent;
   }
+
   ::-webkit-scrollbar-thumb {
     background: var(--primary);
     border-radius: 5px;
   }
+
   ::-webkit-scrollbar-thumb:hover {
-    background: oklch(60% 0.19179 45.189); /* Slightly darker */
+    background: oklch(60% 0.19179 45.189);
+    /* Slightly darker */
   }
 }

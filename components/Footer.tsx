@@ -75,9 +75,6 @@ export default function Footer() {
               <li className="hover:text-primary transition-colors cursor-pointer">
                 Dépannage sur Site
               </li>
-              <li className="hover:text-primary transition-colors cursor-pointer">
-                Vente de Pièces
-              </li>
             </ul>
           </div>
 
