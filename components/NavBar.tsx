@@ -18,15 +18,24 @@ import {
 import { MessageSquare, Menu } from "lucide-react";
 
 export default function NavBar() {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isLightMode, setIsLightMode] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
+      const expertiseSection = document.getElementById("expertise");
+      if (expertiseSection) {
+        // Trigger switch when the expertise section reaches the top area
+        const threshold = expertiseSection.offsetTop - 100;
+        setIsLightMode(window.scrollY > threshold);
+      } else {
+        // Fallback if section not found (e.g. on other pages)
+        setIsLightMode(window.scrollY > 0);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Check initial state
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -36,19 +45,21 @@ export default function NavBar() {
 
   return (
     <section
-      className={`px-4 sm:px-6 py-3 flex justify-between items-center fixed top-0 left-0 right-0 z-50 h-16 backdrop-blur-md transition-shadow duration-300 ${
-        isScrolled ? "shadow-md bg-background/95" : "bg-background/80"
+      className={`px-4 sm:px-6 py-3 flex justify-between items-center fixed top-0 left-0 right-0 z-50 h-20 transition-all duration-300 ${
+        isLightMode
+          ? "bg-white/95 backdrop-blur-md shadow-md text-foreground"
+          : "bg-transparent text-white"
       }`}
     >
       {/* Left: Logo */}
       <div className="flex justify-start">
-        <div className="relative w-28 h-10">
+        <div className="relative w-24 h-10">
           <Image
-            src="/logo/blacklogo.svg"
+            src="/logo/logo1.svg"
             alt="Logo"
             fill
             priority
-            className="object-contain"
+            className="object-contain transition-all duration-300"
           />
         </div>
       </div>
@@ -59,7 +70,11 @@ export default function NavBar() {
           <Link
             key={item.title}
             href={item.path}
-            className="text-sm font-medium hover:text-primary transition-colors"
+            className={`text-sm font-medium transition-colors ${
+              isLightMode
+                ? "text-foreground hover:text-primary"
+                : "text-white/80 hover:text-white"
+            }`}
           >
             {item.title}
           </Link>
@@ -69,7 +84,7 @@ export default function NavBar() {
       {/* Desktop Contact Button */}
       <div className="hidden lg:flex justify-end">
         <button
-          className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg font-medium text-sm hover:bg-primary/90 transition-colors cursor-pointer"
+          className="flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 cursor-pointer bg-primary text-primary-foreground hover:bg-primary/90"
           onClick={() =>
             document
               .getElementById("contact")
@@ -84,7 +99,9 @@ export default function NavBar() {
       {/* Mobile Menu */}
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild className="lg:hidden">
-          <button className="p-2 hover:bg-muted rounded-lg transition-colors">
+          <button className={`p-2 rounded-lg transition-colors ${
+             isLightMode ? "hover:bg-muted" : "hover:bg-white/20 text-white"
+          }`}>
             <Menu className="w-6 h-6" />
           </button>
         </SheetTrigger>

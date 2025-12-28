@@ -10,13 +10,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand Column */}
           <div className="flex flex-col gap-6">
-            <div className="relative w-32 h-12">
+            <div className="relative w-64 h-24">
               {/* Using CSS filter to make the black logo white */}
               <Image
-                src="/logo/blacklogo.svg"
+                src="/logo/logo1.svg"
                 alt="Hydrodem Logo"
                 fill
-                className="object-contain brightness-0 invert"
+                className="object-contain"
               />
             </div>
             <p className="text-neutral-400 leading-relaxed">

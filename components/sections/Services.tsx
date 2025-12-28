@@ -19,12 +19,12 @@ export default function Services() {
       image: "/sections/service_field.png",
       icon: Truck,
     },
-    {
-      title: "Pièces Détachées",
-      description: "Large stock de composants spécialisés, filtres et fluides.",
-      image: "/sections/service_parts.png",
-      icon: Package,
-    },
+    // {
+    //   title: "Pièces Détachées",
+    //   description: "Large stock de composants spécialisés, filtres et fluides.",
+    //   image: "/sections/service_parts.png",
+    //   icon: Package,
+    // },
   ];
 
   return (
@@ -45,7 +45,7 @@ export default function Services() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (

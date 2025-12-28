@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   description:
     "Expert en réparation hydraulique, maintenance mécanique d'engins miniers et industriels au Maroc. Diagnostic, pièces de rechange et intervention sur site.",
   icons: {
-    icon: "/logo/blacklogo.svg",
+    icon: "/logo/hydraudem-hq.png",
   },
   keywords: [
     "Hydraulique",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     siteName: "Hydrodem",
     images: [
       {
-        url: "/logo/blacklogo.svg",
+        url: "/logo/hydraudem-hq.png",
         width: 800,
         height: 600,
         alt: "Hydrodem Logo",

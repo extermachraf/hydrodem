@@ -18,9 +18,14 @@ const slides = [
 ];
 
 const partnersLogos = [
-  "/partners/tgcc.svg",
+  // "/partners/tgcc.svg",
   "/partners/sgtm.svg",
   "/partners/talpa.svg",
+  "/partners/logo-1.png",
+  "/partners/logo.png",
+  "/partners/logo-dron-maroc.png",
+  "/partners/sogea-maroc-h-cmjn.png",
+  "/partners/Untitled_Project_enhanced-removebg-preview-e1740352270381.png",
 ];
 
 const Hero = () => {
@@ -124,30 +129,56 @@ const Hero = () => {
         transition={{ duration: 0.8, delay: 1 }}
         className="absolute bottom-0 left-0 w-full z-20 border-t border-white/10 bg-black/40 backdrop-blur-xl"
       >
-        <div className="container mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-6">
-          <p className="text-white/60 text-sm font-medium uppercase tracking-widest whitespace-nowrap">
-            Ils nous font confiance
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12">
-            {partnersLogos.map((logo, idx) => (
-              <div
-                key={idx}
-                className="relative w-24 h-8 sm:h-10 opacity-60 hover:opacity-100 transition-opacity duration-300"
-              >
-                {/* 
-                   Using brightness-0 invert makes black logos white.
-                   We apply this ALWAYS so they are white on the dark backdrop.
-                   We removed the hover effect that reverted colors because if the original is black, 
-                   it becomes invisible on the dark bar.
-                */}
-                <Image
-                  src={logo}
-                  alt={`Partner ${idx}`}
-                  fill
-                  className="object-contain brightness-0 invert"
-                />
-              </div>
-            ))}
+        <div className="container mx-auto px-4 py-5 overflow-hidden">
+          <div className="flex w-full select-none pointer-events-none">
+            <motion.div
+              className="flex flex-shrink-0 items-center gap-16 pr-16"
+              initial={{ x: 0 }}
+              animate={{ x: "-100%" }}
+              transition={{
+                duration: 60,
+                repeat: Infinity,
+                ease: "linear",
+              }}
+            >
+              {[...partnersLogos, ...partnersLogos].map((logo, idx) => (
+                <div
+                  key={idx}
+                  className="relative w-40 h-20 flex-shrink-0 brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300"
+                >
+                  <Image
+                    src={logo}
+                    alt={`Partner ${idx}`}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              ))}
+            </motion.div>
+            <motion.div
+              className="flex flex-shrink-0 items-center gap-16 pr-16"
+              initial={{ x: 0 }}
+              animate={{ x: "-100%" }}
+              transition={{
+                duration: 60,
+                repeat: Infinity,
+                ease: "linear",
+              }}
+            >
+              {[...partnersLogos, ...partnersLogos].map((logo, idx) => (
+                <div
+                  key={idx + 100}
+                  className="relative w-40 h-20 flex-shrink-0 brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300"
+                >
+                  <Image
+                    src={logo}
+                    alt={`Partner ${idx}`}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              ))}
+            </motion.div>
           </div>
         </div>
       </motion.div>
