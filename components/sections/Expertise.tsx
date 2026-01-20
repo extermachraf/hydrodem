@@ -2,31 +2,31 @@
 
 import React from "react";
 import Image from "next/image";
-import { ShieldCheck, Zap, HardHat, ArrowRight } from "lucide-react";
+import { ShieldCheck, Wrench, Clock, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 export default function Expertise() {
   const features = [
     {
-      title: "Expertise de Confiance",
+      title: "Expertise Sectorielle",
       description:
-        "Nos professionnels chevronnés comprennent les complexités des systèmes hydrauliques et s'engagent à fournir des résultats exceptionnels.",
+        "Nos techniciens sont des spécialistes avec une expérience approfondie des exigences uniques des équipements miniers et de terrassement (pelles, bulldozers, chargeurs et camions de transport).",
+      icon: Wrench,
+      link: "#",
+    },
+    {
+      title: "Qualité et Fiabilité",
+      description:
+        "Nous utilisons des pièces de rechange de haute qualité et respectons des normes industrielles rigoureuses pour garantir que chaque réparation est durable et fiable, prolongeant ainsi la durée de vie de votre précieux équipement.",
       icon: ShieldCheck,
       link: "#",
     },
     {
-      title: "Innovation au Cœur",
+      title: "Réduction des Temps d'Arrêt",
       description:
-        "Nous prospérons grâce à l'innovation. Des technologies de diagnostic avancées aux stratégies avant-gardistes, nous repoussons constamment les limites.",
-      icon: Zap,
-      link: "#",
-    },
-    {
-      title: "La Sécurité Avant Tout",
-      description:
-        "La sécurité est notre priorité absolue. Nous respectons les normes de sécurité les plus strictes pour protéger nos travailleurs, nos partenaires et vos machines.",
-      icon: HardHat,
+        "Nos processus efficaces et nos outils de diagnostic à la fine pointe de la technologie garantissent une réparation correcte dès la première fois, minimisant vos retards opérationnels.",
+      icon: Clock,
       link: "#",
     },
   ];

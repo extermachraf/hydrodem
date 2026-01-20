@@ -7,14 +7,11 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const slides = [
   {
-    image: "/hero/image1.png",
+    image: "/hero/photo1.png",
   },
   {
-    image: "/hero/image2.png",
-  },
-  {
-    image: "/hero/image3.png",
-  },
+    image: "/hero/photo2.jpg",
+  }
 ];
 
 const partnersLogos = [
@@ -63,19 +60,19 @@ const Hero = () => {
       </AnimatePresence>
 
       {/* Content - Centered */}
-      <div className="relative z-10 container mx-auto px-4 flex flex-col items-center text-center pb-28 sm:pb-0">
+      <div className="relative z-10 container mx-auto px-4 flex flex-col items-center text-center pb-28 sm:pb-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <span className="inline-block py-1 px-3 rounded-full bg-primary/20 border border-primary/30 text-primary text-sm font-semibold tracking-wider uppercase mb-6 backdrop-blur-md">
+          {/* <span className="inline-block py-1 px-3 rounded-full bg-primary/20 border border-primary/30 text-primary text-sm font-semibold tracking-wider uppercase mb-6 backdrop-blur-md">
             Expertise Industrielle & Minière
-          </span>
+          </span> */}
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold text-white leading-tight mb-6">
-            Maximisez votre <span className="text-primary">Productivité</span>
+            La Puissance au  <span className="text-primary">Cœur</span>
             <br />
-            Sans Compromis
+            de Vos Engins Lourds 
           </h1>
         </motion.div>
 
@@ -83,10 +80,9 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-gray-200 text-lg sm:text-xl max-w-2xl mb-10 leading-relaxed"
+          className="text-gray-200 text-md sm:text-xl max-w-2xl mb-10 leading-relaxed"
         >
-          Nous offrons des réparations de précision, des interventions d'urgence
-          sur le terrain pour garder votre flotte opérationnelle 24/7
+          Chez Hydraudem, nous comprenons que dans les secteurs du terrassement et de l'exploitation minière , l'immobilisation n'est pas une option. Vos équipements lourds sont la colonne vertébrale de vos opérations, et leur performance fiable est essentielle pour respecter les délais et maintenir la rentabilité.
         </motion.p>
 
         <motion.div
@@ -128,7 +124,7 @@ const Hero = () => {
         transition={{ duration: 0.8, delay: 1 }}
         className="absolute bottom-0 left-0 w-full z-20 border-t border-white/10 bg-black/40 backdrop-blur-xl"
       >
-        <div className="container mx-auto px-4 py-5 overflow-hidden">
+        <div className="container mx-auto px-4 py-4 overflow-hidden">
           <div className="flex w-full select-none pointer-events-none">
             <motion.div
               className="flex flex-shrink-0 items-center gap-16 pr-16"

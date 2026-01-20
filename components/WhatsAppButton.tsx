@@ -5,7 +5,7 @@ import React from "react";
 export default function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/212522000000"
+      href="https://wa.me/212663181546"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-[100] flex items-center justify-center w-12 h-12 bg-[#25D366] rounded-full shadow-lg hover:scale-110 hover:shadow-xl transition-all duration-300 group"

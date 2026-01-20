@@ -1,11 +1,13 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import { Wrench, Truck, Package } from "lucide-react";
+import { Wrench, Truck, Package, MousePointerClick } from "lucide-react";
 import { motion } from "framer-motion";
+import DiagnosticShowcase from "@/components/DiagnosticShowcase";
 
 export default function Services() {
+  const [isDiagnosticOpen, setIsDiagnosticOpen] = useState(false);
   const services = [
     {
       title: "Diagnostic & Réparations",
@@ -48,6 +50,8 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {services.map((service, index) => {
             const Icon = service.icon;
+            const isDiagnostic = index === 0; // First service is Diagnostic
+            
             return (
               <motion.div
                 key={index}
@@ -55,7 +59,10 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
-                className="group relative h-[500px] w-full rounded-3xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500"
+                onClick={isDiagnostic ? () => setIsDiagnosticOpen(true) : undefined}
+                className={`group relative h-[500px] w-full rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 ${
+                  isDiagnostic ? "cursor-pointer" : ""
+                }`}
               >
                 {/* Background Image */}
                 <Image
@@ -69,10 +76,29 @@ export default function Services() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
                 
                 {/* Top Badge */}
-                 <div className="absolute top-6 left-6 bg-white/10 backdrop-blur-md border border-white/20 text-white px-4 py-1.5 rounded-full flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform -translate-y-2 group-hover:translate-y-0">
-                    <Icon className="w-4 h-4" />
-                    <span className="text-xs font-semibold tracking-wide uppercase">Nos Services</span>
-                 </div>
+                <div className="absolute top-6 left-6 bg-white/10 backdrop-blur-md border border-white/20 text-white px-4 py-1.5 rounded-full flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform -translate-y-2 group-hover:translate-y-0">
+                  <Icon className="w-4 h-4" />
+                  <span className="text-xs font-semibold tracking-wide uppercase">Nos Services</span>
+                </div>
+
+                {/* Clickable Hint - Only for Diagnostic */}
+                {isDiagnostic && (
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ 
+                      duration: 0.5, 
+                      delay: 0.8,
+                      repeat: Infinity,
+                      repeatType: "reverse",
+                      repeatDelay: 2
+                    }}
+                    className="absolute top-6 right-6 bg-primary text-primary-foreground px-3 py-2 rounded-full flex items-center gap-2 shadow-lg"
+                  >
+                    <MousePointerClick className="w-4 h-4" />
+                    <span className="text-xs font-semibold">Cliquez ici</span>
+                  </motion.div>
+                )}
 
                 {/* Content Box */}
                 <div className="absolute bottom-4 left-4 right-4 bg-background/95 backdrop-blur-sm p-6 rounded-2xl shadow-lg transform transition-transform duration-500 group-hover:-translate-y-2 border border-border/50">
@@ -83,6 +109,12 @@ export default function Services() {
                     <p className="text-muted-foreground text-sm leading-relaxed">
                       {service.description}
                     </p>
+                    {isDiagnostic && (
+                      <p className="text-primary text-xs font-semibold mt-2 flex items-center gap-1">
+                        <span>Voir le processus complet</span>
+                        <span className="text-lg">→</span>
+                      </p>
+                    )}
                   </div>
                 </div>
               </motion.div>
@@ -90,6 +122,12 @@ export default function Services() {
           })}
         </div>
       </div>
+
+      {/* Diagnostic Showcase Modal */}
+      <DiagnosticShowcase 
+        isOpen={isDiagnosticOpen} 
+        onClose={() => setIsDiagnosticOpen(false)} 
+      />
     </section>
   );
 }

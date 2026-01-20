@@ -84,19 +84,28 @@ export default function Footer() {
             <ul className="flex flex-col gap-4 text-neutral-400">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-1" />
-                <span>
-                  123 Zone Industrielle Sud,
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=N°+18+Rue+3+Lot+RATC+1er+Etage+El+Qods+Sidi+Bernoussi+Casablanca"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  N° 18 Rue 3 Lot RATC 1er Etage
                   <br />
-                  Casablanca, Maroc
-                </span>
+                  El Qods Sidi Bernoussi, Casablanca
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
-                <span>+212 5 22 00 00 00</span>
+                <a href="tel:+212663181546" className="hover:text-primary transition-colors">
+                  06 63 18 15 46
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <span>contact@hydrodem.ma</span>
+                <a href="mailto:hydraudem@gmail.com" className="hover:text-primary transition-colors">
+                  hydraudem@gmail.com
+                </a>
               </li>
             </ul>
           </div>
