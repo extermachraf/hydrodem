@@ -1,0 +1,74 @@
+- Réparation électrique : 
+
+  1.Faisceau électrique : 
+
+                         étape 1 : Après réception du faisceau dans notre atelier , il est soigneusement nettoyé et dégraissé. 
+                                   Les protections sont ensuite retirées afin d’exposer avec précision les zones endommagées et 
+                                   de lancer le diagnostic technique.
+                         étape 2 : Un contrôle de continuité est d’abord réalisé afin de valider l’intégrité du circuit électrique. Une inspection
+                                   visuelle approfondie est ensuite menée pour identifier toute coupure, trace d’abrasion par frottement,
+                                   brûlure ou écrasement des conducteurs. Enfin, un contrôle de l’oxydation est effectué afin de s’assurer 
+                                   de l’absence de corrosion interne (vert-de-gris) sous l’isolant.
+                         étape 3 : Après finalisation du diagnostic et identification des réparations possibles ainsi que des composants à remplacer, 
+                                   nous procédons à la remise en état du faisceau électrique. Les opérations de réparation sont réalisées selon des 
+                                   méthodes professionnelles adaptées aux engins de chantier et miniers, notamment les interventions suivantes :
+                                  
+                                   1.Réparation des Files : 
+                                     
+                                     . Épissure par sertissage : Réparation d’un fil coupé ou sectionné à l’aide de manchons à sertir professionnels, 
+                                       offrant une excellente tenue mécanique et une forte résistance aux vibrations.
+
+                                     . Protection par gaine thermorétractable étanche : Application de gaines à double paroi adhésive pour assurer 
+                                       l’étanchéité contre l’humidité, la poussière et les hydrocarbures.
+
+                                     . Reprise locale de l’isolant : Remise en état de l’isolation lorsque le cuivre n’est pas affecté.
+
+                                     . Remplacement partiel de section : Découpe de la portion endommagée et remplacement par un conducteur 
+                                       neuf de même section et même spécification électrique.
+
+                                     . Remplacement total du file obligatoire : Lorsque un ou plusieurs fils présentent une oxydation avancée du cuivre 
+                                       (noircissement ou vert-de-gris), des signes de surchauffe ou de brûlure, une perte de souplesse, une section non 
+                                       conforme après réparation, des réparations multiples sur la même ligne, ou lorsque le constructeur impose le remplacement complet.
+
+                                   2. Réparation des connecteurs : 
+
+                                    . Nettoyage et décontamination des broches : Élimination des traces d’oxydation légère, poussière, huile ou humidité à l’aide de produits adaptés.	
+                                    
+                                    . Remplacement des cosses / broches : Extraction des broches endommagées à l’aide d’outils spécifiques, puis sertissage et insertion de
+                                      nouvelles cosses conformes aux spécifications constructeur. 
+
+                                    . Réfection de l’étanchéité : Remplacement des joints d’étanchéité (joints toriques, joints silicone) pour garantir la protection contre l’eau, 
+                                      la poussière et les hydrocarbures.
+ 
+                                    . Reprise du verrouillage mécanique : Vérification et remise en état des systèmes de verrouillage afin d’assurer un maintien correct 
+                                      du connecteur malgré les vibrations.
+                        
+                                    . Remplacement du connecteur : Lorsque les connecteurs présentent une corrosion avancée des broches (piqûres, noircissement ou perte de matière), 
+                                      une déformation ou une casse du boîtier, une perte d’étanchéité irréversible, des traces de surchauffe ou de brûlure, ou un jeu excessif 
+                                      provoquant des faux contacts.
+
+                           étape 4 : Après achèvement des opérations de réparation des organes du faisceau, le technicien procède au regroupement des conducteurs à l’aide d’un ruban 
+                                     adhésif électrique de qualité ou d’un ruban toilé adapté. Un blindage est ensuite réalisé par l’installation d’une gaine annelée neuve ou d’une 
+                                     gaine tressée anti-abrasion, afin d’assurer la protection mécanique des fils et de garantir la durabilité du faisceau.
+
+                           étape 5 : Le faisceau est désormais prêt à être installé sur la machine et approuvé pour la livraison au client, garantissant un fonctionnement fiable après 
+                                     l'installation.
+
+  2.Unités de contrôle électroniques : 
+
+                           étape 1 : À la réception du calculateur dans notre atelier, son identification complète est réalisée.Une inspection visuelle du boîtier permet de détecter 
+                                     toute détérioration, infiltration ou corrosion.Les alimentations, masses et communications sont ensuite contrôlées . Ensuite Le calculateur est connecté
+                                     à un outil de diagnostic pour la lecture des codes défauts et paramètres.Les mesures sont comparées aux spécifications constructeur afin de confirmer 
+                                     une défaillance interne et d’exclure un défaut du faisceau ou des capteurs.
+   
+                           étape 2 : Après ouverture du boîtier électronique, une inspection visuelle détaillée de la carte électronique est réalisée afin d’identifier d’éventuels 
+                                     composants brûlés ou surchauffés, des traces d’oxydation ou de corrosion, ainsi que des soudures fissurées ou défectueuses (soudures froides).
+                                     Les composants endommagés sont ensuite localisés et identifiés à l’aide des schémas électroniques et de tests de composants appropriés.
+
+                           étape 3 : Nous intervenons directement sur le module électronique en remplaçant les composants défectueux (condensateurs, résistances, drivers, étages de puissance).
+                                     Nous réparons les pistes PCB endommagées et reprenons les soudures à l’aide d’équipements professionnels de haute précision.
+                                     Si nécessaire, nous reprogrammons l’ECU, flashons le firmware d’origine ou une version mise à jour, puis restaurons les paramètres de calibration 
+                                     et les réglages machine afin de garantir un fonctionnement fiable et conforme aux spécifications d’origine.
+
+                            étape 4 : Après validation complète des réparations et des tests fonctionnels, nous procédons à l’assemblage final du module électronique. Chaque unité est soigneusement contrôlée,
+                                      sécurisée et préparée pour l’expédition, afin d’être livrée prête à être installée et utilisée en toute confiance.

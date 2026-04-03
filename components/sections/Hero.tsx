@@ -82,7 +82,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-gray-200 text-md sm:text-xl max-w-2xl mb-10 leading-relaxed"
         >
-          Chez Hydraudem, nous comprenons que dans les secteurs du terrassement et de l'exploitation minière , l'immobilisation n'est pas une option. Vos équipements lourds sont la colonne vertébrale de vos opérations, et leur performance fiable est essentielle pour respecter les délais et maintenir la rentabilité.
+          Chez Hydrau Dem, nous comprenons que dans les secteurs du terrassement et de l'exploitation minière , l'immobilisation n'est pas une option. Vos équipements lourds sont la colonne vertébrale de vos opérations, et leur performance fiable est essentielle pour respecter les délais et maintenir la rentabilité.
         </motion.p>
 
         <motion.div
